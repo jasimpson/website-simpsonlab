@@ -6,6 +6,8 @@ AUTHOR = u'Jim Simpson'
 SITENAME = u'Simpson Lab'
 SITEURL = ''
 
+THEME = '/theme/pelican-bootstrap3'
+
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
