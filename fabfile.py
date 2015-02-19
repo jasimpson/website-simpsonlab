@@ -4,6 +4,7 @@ import os
 import sys
 import SimpleHTTPServer
 import SocketServer
+from datetime import datetime
 
 # Local path configuration (can be absolute or relative to fabfile)
 env.deploy_path = 'output'
@@ -17,6 +18,20 @@ dest_path = '/var/www'
 env.cloudfiles_username = 'my_rackspace_username'
 env.cloudfiles_api_key = 'my_rackspace_api_key'
 env.cloudfiles_container = 'my_cloudfiles_container'
+
+# New post template
+TEMPLATE = """
+Title: {title}
+
+Date: {year}-{month}-{day} {hour}:{minute:02d}
+Tags:
+Category:
+Slug: {slug}
+Summary:
+Status: draft
+
+
+"""
 
 
 def clean():
@@ -71,3 +86,20 @@ def publish():
         delete=True,
         extra_opts='-c',
     )
+
+def make_entry(title):
+    today = datetime.today()
+    slug = title.lower().strip().replace(' ', '-')
+    f_create = "content/{}_{:0>2}_{:0>2}_{}.md".format(
+        today.year, today.month, today.day, slug)
+    t = TEMPLATE.strip().format(title=title,
+                                hashes='#' * len(title),
+                                year=today.year,
+                                month=today.month,
+                                day=today.day,
+                                hour=today.hour,
+                                minute=today.minute,
+                                slug=slug)
+    with open(f_create, 'w') as w:
+        w.write(t)
+    print("File created -> " + f_create)
