@@ -23,7 +23,6 @@ env.cloudfiles_container = 'my_cloudfiles_container'
 # New post template
 TEMPLATE = """
 Title: {title}
-
 Date: {year}-{month}-{day} {hour}:{minute:02d}
 Tags:
 Category:
