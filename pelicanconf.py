@@ -29,8 +29,9 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('twitter', '#'),
+		  ('github', '#'),
+          ('linkedin', '#'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -56,3 +57,7 @@ SHOW_DATE_MODIFIED = False
 
 # Sidebar Info
 HIDE_SIDEBAR = True
+
+# Banne Image
+BANNER = 'uploads/home-bg.jpg'
+BANNER_SUBTITLE = 'I like building things'
