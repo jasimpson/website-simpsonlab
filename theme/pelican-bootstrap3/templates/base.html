@@ -103,7 +103,7 @@
 </head>
 <body>
 
-<div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation">
+<nav class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation">
 	<div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -150,7 +150,7 @@
         </div>
         <!-- /.navbar-collapse -->
     </div>
-</div> <!-- /.navbar -->
+</nav> <!-- /.navbar -->
 <!-- Banner -->
 {% if BANNER and BANNER_ALL_PAGES %}
     {% include 'includes/banner.html' %}
@@ -192,6 +192,9 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/clean-blog.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="{{ SITEURL }}/theme/js/respond.min.js"></script>
