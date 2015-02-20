@@ -36,8 +36,22 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+# Template related
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
+
+
+
 ####################### Theme-Specific Settings #########################
 THEME = 'theme/pelican-bootstrap3'
 
 # Pelican Theme-Specific Variables  
 BOOTSTRAP_THEME = 'clean'
+
+# Article Info
+SHOW_ARTICLE_AUTHOR = False
+SHOW_ARTICLE_CATEGORY = False
+SHOW_DATE_MODIFIED = False
+
+# Sidebar Info
+HIDE_SIDEBAR = True
