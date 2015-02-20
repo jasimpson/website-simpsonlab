@@ -6,8 +6,6 @@ AUTHOR = u'Jim Simpson'
 SITENAME = u'Simpson Lab'
 SITEURL = ''
 
-THEME = 'theme/pelican-bootstrap3'
-
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
@@ -35,3 +33,9 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+####################### Theme-Specific Settings #########################
+THEME = 'theme/pelican-bootstrap3'
+
+# Pelican Theme-Specific Variables  
+BOOTSTRAP_THEME = 'clean'
