@@ -63,3 +63,6 @@ cache/
 s3cmd/
 templates/
 content/drafts/
+
+.DS_Store
+
