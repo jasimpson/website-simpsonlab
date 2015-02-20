@@ -9,6 +9,7 @@ SITEURL = ''
 PATH = 'content'
 ARTICLE_PATHS = ['articles']
 PAGES_PATHS = ['pages']
+STATIC_PATHS = ['uploads']
 
 TIMEZONE = 'America/New_York'
 
