@@ -57,11 +57,9 @@ target/
 *.pid
 *.attr
 *.pyc
-static/
 output/
 cache/
 s3cmd/
-templates/
 content/drafts/
 
 .DS_Store
