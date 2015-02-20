@@ -7,6 +7,8 @@ SITENAME = u'Simpson Lab'
 SITEURL = ''
 
 PATH = 'content'
+ARTICLE_PATHS = ['articles']
+PAGES_PATHS = ['pages']
 
 TIMEZONE = 'America/New_York'
 
