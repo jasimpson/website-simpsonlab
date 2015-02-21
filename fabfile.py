@@ -28,6 +28,7 @@ Tags:
 Category:
 Slug: {slug}
 Summary:
+Cover: 
 Status: draft
 
 
@@ -90,10 +91,9 @@ def publish():
 def make_entry(title):
     today = datetime.today()
     slug = title.lower().strip().replace(' ', '-')
-    f_create = "content/{}_{:0>2}_{:0>2}_{}.md".format(
+    f_create = "content/articles/{}_{:0>2}_{:0>2}_{}.md".format(
         today.year, today.month, today.day, slug)
     t = TEMPLATE.strip().format(title=title,
-                                hashes='#' * len(title),
                                 year=today.year,
                                 month=today.month,
                                 day=today.day,
