@@ -62,12 +62,13 @@
 	],
 	"file_history":
 	[
+		"/Users/jim/Dropbox/Work/github/website-simpsonlab/theme/pelican-bootstrap3/static/css/clean-blog.css",
+		"/Users/jim/Downloads/webfontkit-20150221-012227/stylesheet.css",
 		"/Users/jim/Dropbox/Work/github/website-simpsonlab/content/articles/2015_02_20_test-post-2.md",
 		"/Users/jim/Dropbox/Work/github/website-simpsonlab/theme/pelican-bootstrap3/static/css/style.css",
 		"/Users/jim/Dropbox/Work/github/website-simpsonlab/theme/pelican-bootstrap3/templates/article_list.html",
 		"/Users/jim/Dropbox/Work/github/website-simpsonlab/pelicanconf.py",
 		"/Users/jim/Dropbox/Work/github/website-simpsonlab/theme/pelican-bootstrap3/templates/base.html",
-		"/Users/jim/Dropbox/Work/github/website-simpsonlab/theme/pelican-bootstrap3/static/css/clean-blog.css",
 		"/Users/jim/Dropbox/Work/github/website-simpsonlab/theme/pelican-bootstrap3/static/css/bootstrap.clean.css",
 		"/Users/jim/Dropbox/Work/github/website-simpsonlab/theme/pelican-bootstrap3/templates/includes/translations.html",
 		"/Users/jim/Dropbox/Work/github/website-simpsonlab/theme/pelican-bootstrap3/templates/includes/article_info.html",
@@ -127,6 +128,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font-family",
+			"@font-face",
+			"Lora",
+			"static/fonts",
+			"static\\fonts",
+			"static/fonts",
+			"font",
 			"DEFAULT_DATE_FORMAT",
 			"a",
 			"#0085a1",
