@@ -6,15 +6,19 @@ AUTHOR = u'Jim Simpson'
 SITENAME = u'Simpson Lab'
 SITEURL = ''
 
+DEFAULT_LANG = u'en'
+TIMEZONE = 'America/New_York'
+DEFAULT_DATE_FORMAT = '%b %d, %Y'
+
 PATH = 'content'
 ARTICLE_PATHS = ['articles']
 PAGES_PATHS = ['pages']
 STATIC_PATHS = ['uploads']
 
-TIMEZONE = 'America/New_York'
-DEFAULT_DATE_FORMAT = '%b %d, %Y'
-
-DEFAULT_LANG = u'en'
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
