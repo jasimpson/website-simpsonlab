@@ -74,18 +74,12 @@
     <section id="content">
         <article>
             <header class="page-header">
-                <h1>
-                    <a href="{{ SITEURL }}/{{ article.url }}"
-                       rel="bookmark"
-                       title="Permalink to {{ article.title|striptags }}">
-                        {{ article.title }}
-                    </a>
-                </h1>
+                <h1> {{ article.title }} </h1>
             </header>
             <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
-                        {% include "includes/article_info.html" %}
+                <div>
+                    <div>
+                        Published on {{ article.locale_date }}
                     </div>
                 </div>
                 {{ article.content }}

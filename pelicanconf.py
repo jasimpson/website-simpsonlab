@@ -12,6 +12,7 @@ PAGES_PATHS = ['pages']
 STATIC_PATHS = ['uploads']
 
 TIMEZONE = 'America/New_York'
+DEFAULT_DATE_FORMAT = '%b %d, %Y'
 
 DEFAULT_LANG = u'en'
 
