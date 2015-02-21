@@ -11,6 +11,9 @@
         <meta name="description" content="{{ page.summary|striptags|escape }}" />
     {% endif %}
 {% endblock %}
+{% block banner %}
+    {% include 'includes/banner.html' %}
+{% endblock %}
 {% block opengraph %}
     {% if OPEN_GRAPH_FB_APP_ID %}
         <meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}"/>
