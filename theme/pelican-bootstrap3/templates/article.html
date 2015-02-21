@@ -14,6 +14,9 @@
         <meta name="description" content="{{ article.summary|striptags|escape }}" />
     {% endif %}
 {% endblock %}
+{% block banner %}
+    {% include 'includes/cover.html' %}
+{% endblock %}
 {% block opengraph %}
     {% if USE_OPEN_GRAPH %}
         {% if OPEN_GRAPH_FB_APP_ID %}

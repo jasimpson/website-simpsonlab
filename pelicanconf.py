@@ -63,3 +63,5 @@ BANNER = 'uploads/home-bg.jpg'
 BANNER_SUBTITLE = 'I like building things'
 
 BOOTSTRAP_FLUID = True
+
+COVER = 'uploads/cover-bg.jpg'
