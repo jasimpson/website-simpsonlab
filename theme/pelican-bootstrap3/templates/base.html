@@ -103,9 +103,9 @@
 </head>
 <body>
 
-<nav class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation">
+<nav class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %} navbar-custom navbar-fixed-top" role="navigation">
 	<div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
-        <div class="navbar-header">
+        <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -194,7 +194,7 @@
 <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="js/clean-blog.js"></script>
+<script src="/theme/js/clean-blog.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="{{ SITEURL }}/theme/js/respond.min.js"></script>
