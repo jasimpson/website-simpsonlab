@@ -63,4 +63,5 @@ s3cmd/
 content/drafts/
 
 .DS_Store
+*.sublime-workspace
 
