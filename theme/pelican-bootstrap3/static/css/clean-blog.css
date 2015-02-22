@@ -198,6 +198,7 @@ hr.small {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
+  margin-bottom: 10px;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
@@ -298,6 +299,12 @@ footer .list-inline {
 }
 footer .copyright {
   font-size: 14px;
+  text-align: center;
+  margin-bottom: 0;
+}
+footer .footer-subtle {
+  color: #d3d3d3;
+  font-size: 7px;
   text-align: center;
   margin-bottom: 0;
 }

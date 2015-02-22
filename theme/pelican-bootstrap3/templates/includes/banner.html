@@ -7,13 +7,13 @@
                 <div class="site-heading">
                     <h2>{{ AUTHOR }}</h2>
                     <hr class="small">
-                    <span class="subheading">{% if BANNER_SUBTITLE %} <h4>{{ BANNER_SUBTITLE }}</h4> {% endif %}</span>
+                    <span class="subheading">{% if BANNER_SUBTITLE %}{{ BANNER_SUBTITLE }}{% endif %}</span>
 					{% if SOCIAL %}
 		                <ul class="list-inline text-center">
 			                {% for name, link in SOCIAL %}
 			                    {% set name_sanitized = name|lower|replace('+','-plus')|replace(' ','-') %}
 			                    {% set iconattributes = '"fa fa-' ~ name_sanitized ~ '"' %}
-			                <li class="list-inline-item"><a href="{{ link }}">                                
+			                <li class="list-inline-item"><a href="{{ link }}" target="_blank">                                
 			                	<span class="fa-stack fa-lg">
                                     <i class="fa fa-circle-thin fa-stack-2x"></i>
                                     <i class={{ iconattributes }}></i>

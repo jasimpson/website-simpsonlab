@@ -13,7 +13,9 @@ DEFAULT_DATE_FORMAT = '%b %d, %Y'
 PATH = 'content'
 ARTICLE_PATHS = ['articles']
 PAGES_PATHS = ['pages']
-STATIC_PATHS = ['uploads']
+STATIC_PATHS = ['uploads', 'extra',]
+
+EXTRA_PATH_METADATA = { 'extra/favicon.ico': {'path': 'favicon.ico'}, }
 
 ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
@@ -34,9 +36,9 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('twitter', '#'),
-		  ('github', '#'),
-          ('linkedin', '#'),)
+SOCIAL = (('twitter', 'https://twitter.com/jasimpson'),
+		  ('github', 'https://github.com/jasimpson'),
+          ('linkedin', 'https://linkedin.com/in/jasimpson'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -64,8 +66,8 @@ SHOW_DATE_MODIFIED = False
 HIDE_SIDEBAR = True
 
 # Banne Image
-BANNER = 'uploads/home-bg.jpg'
-BANNER_SUBTITLE = 'I like building things'
+BANNER = 'uploads/home-bg-02.jpg'
+BANNER_SUBTITLE = 'I like building things and working with data'
 
 BOOTSTRAP_FLUID = True
 
