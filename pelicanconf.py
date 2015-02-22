@@ -57,6 +57,9 @@ THEME = 'theme/pelican-bootstrap3'
 # Pelican Theme-Specific Variables  
 BOOTSTRAP_THEME = 'clean'
 
+# Bootstrap Fluid
+BOOTSTRAP_FLUID = True
+
 # Article Info
 SHOW_ARTICLE_AUTHOR = False
 SHOW_ARTICLE_CATEGORY = False
@@ -65,10 +68,6 @@ SHOW_DATE_MODIFIED = False
 # Sidebar Info
 HIDE_SIDEBAR = True
 
-# Banne Image
-BANNER = 'uploads/home-bg-02.jpg'
+# Banner Image
+BANNER = 'uploads/sitecover-004.jpg'
 BANNER_SUBTITLE = 'I like building things and working with data'
-
-BOOTSTRAP_FLUID = True
-
-COVER = 'uploads/cover-bg.jpg'

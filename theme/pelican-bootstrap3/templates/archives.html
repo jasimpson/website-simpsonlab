@@ -8,10 +8,12 @@
     </ol>
     {% endif %}
 {% endblock %}
-
+{% block banner %}
+    {% include 'includes/banner.html' %}
+{% endblock %}
 {% block content %}
     <section id="content">
-        <h1>Archives for {{ SITENAME }}</h1>
+        <h1>{{ SITENAME }} Blog Articles</h1>
         <div id="archives">
             {% for article in dates %}
                 <p>
