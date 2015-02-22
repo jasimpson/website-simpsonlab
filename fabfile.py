@@ -88,10 +88,10 @@ def publish():
         extra_opts='-c',
     )
 
-def make_entry(title):
+def new_draft(title):
     today = datetime.today()
     slug = title.lower().strip().replace(' ', '-')
-    f_create = "content/articles/{}_{:0>2}_{:0>2}_{}.md".format(
+    f_create = "content/drafts/{}_{:0>2}_{:0>2}_{}.md".format(
         today.year, today.month, today.day, slug)
     t = TEMPLATE.strip().format(title=title,
                                 year=today.year,
