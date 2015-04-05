@@ -40,6 +40,8 @@ SOCIAL = (('twitter', 'https://twitter.com/jasimpson'),
 		  ('github', 'https://github.com/jasimpson'),
           ('linkedin', 'https://linkedin.com/in/jasimpson'),)
 
+PYGMENTS_STYLE = 'friendly'
+
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -54,7 +56,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 ####################### Theme-Specific Settings #########################
 THEME = 'theme/pelican-bootstrap3'
 
-# Pelican Theme-Specific Variables  
+# Pelican Theme-Specific Variables
 BOOTSTRAP_THEME = 'clean'
 
 # Bootstrap Fluid
